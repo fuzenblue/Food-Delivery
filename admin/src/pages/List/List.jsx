@@ -5,21 +5,21 @@ import { toast } from 'react-toastify'
 
 const List = ({url}) => {
 
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([])
 
   const fetchList = async () => {
-    const response = await axios.get(`${url}/api/food/list`);
+    const response = await axios.get(`${url}/api/food/list`)
 
     if (response.data.success) {
-      setList(response.data.data);
+      setList(response.data.data)
     } else {
       toast.error("Error")
     }
   }
 
   const removeFood = async(foodId) => {
-    const response = await axios.post(`${url}/api/food/remove`,{id:foodId});
-    await fetchList();
+    const response = await axios.post(`${url}/api/food/remove`,{id:foodId})
+    await fetchList()
 
     if (response.data.success) {
       toast.success(response.data.massage)
@@ -29,7 +29,7 @@ const List = ({url}) => {
   }
 
   useEffect(() => {
-    fetchList();
+    fetchList()
   },[])
 
   return (
