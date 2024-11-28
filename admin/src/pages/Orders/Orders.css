@@ -1,0 +1,92 @@
+/* General container styles */
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Order list container */
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual order item styles */
+  .order-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+  }
+  
+  .order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .order-item > div {
+    flex: 1;
+  }
+  
+  /* Food details */
+  .order-item-food {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .order-item-name {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .order-item-address p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+  }
+  
+  .order-item-phone {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Dropdown and amount */
+  .order-item select {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .order-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Order item amount */
+  .order-item p:last-child {
+    font-weight: bold;
+    color: #2c8f8f;
+  }
+  
+  /* Option text styles */
+  .order-item select option {
+    font-size: 14px;
+  }
+  
+  /* Add some hover effects */
+  .order-item:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
